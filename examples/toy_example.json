@@ -1,0 +1,91 @@
+{
+ "instance": [
+  1,
+  1,
+  0
+ ],
+ "decision": "A",
+ "a": [
+  1.0,
+  0.0
+ ],
+ "z": [
+  1.0,
+  0.2
+ ],
+ "order_importance": [
+  3.0,
+  1.0,
+  3.0
+ ],
+ "steps": [
+  {
+   "freed": "s2",
+   "L": [
+    2.0,
+    -1.0
+   ],
+   "U": [
+    3.0,
+    -1.0
+   ],
+   "state": [
+    "1",
+    "0"
+   ],
+   "margin_vs_B": 0.8,
+   "removed": true,
+   "exact_sufficient": true
+  },
+  {
+   "freed": "s1",
+   "L": [
+    0.0,
+    -1.0
+   ],
+   "U": [
+    3.0,
+    0.0
+   ],
+   "state": [
+    "?",
+    "0"
+   ],
+   "margin_vs_B": -0.2,
+   "removed": false,
+   "exact_sufficient": false
+  },
+  {
+   "freed": "s3",
+   "L": [
+    1.0,
+    -1.0
+   ],
+   "U": [
+    3.0,
+    1.0
+   ],
+   "state": [
+    "1",
+    "?"
+   ],
+   "margin_vs_B": -0.2,
+   "removed": false,
+   "exact_sufficient": false
+  }
+ ],
+ "explanation": {
+  "s1": 1,
+  "s3": 0
+ },
+ "cube_decisions": {
+  "000": "B",
+  "001": "B",
+  "010": "A",
+  "011": "B",
+  "100": "A",
+  "101": "B",
+  "110": "A",
+  "111": "B"
+ }
+}

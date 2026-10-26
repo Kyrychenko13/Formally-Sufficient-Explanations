@@ -1,0 +1,138 @@
+{
+ "status": "OFFICIAL (Colab)",
+ "smoke": false,
+ "datasets": {
+  "breast_cancer": {
+   "H2": {
+    "ours_median": 6.0,
+    "ours_mean": 6.456942003514938,
+    "ours_p90": 10.0,
+    "ours_viol": 0,
+    "n": 1707,
+    "ours_ms": 13.672487933216702,
+    "cmp": {
+     "cmp_ours_len": 8.0,
+     "cmp_ours_ms": 15.801007409998533,
+     "milp_len": 8.0,
+     "milp_ms": 169.6728487200016,
+     "anchor_len": 2.0,
+     "anchor_ms": 7215.181648040004
+    },
+    "cmp_anchor_viol_share": 1.0,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "H3": {
+    "ours_median": 8.0,
+    "ours_mean": 7.9502050380785,
+    "ours_p90": 11.0,
+    "ours_viol": 0,
+    "n": 1707,
+    "ours_ms": 13.072244441125397,
+    "cmp": {
+     "cmp_ours_len": 9.0,
+     "cmp_ours_ms": 14.299677790000942,
+     "milp_len": 9.0,
+     "milp_ms": 148.86999412999387,
+     "anchor_len": 2.0,
+     "anchor_ms": 6144.537705609996
+    },
+    "cmp_anchor_viol_share": 1.0,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "K2": true,
+   "K3": true
+  },
+  "pima_diabetes": {
+   "H2": {
+    "ours_median": 7.0,
+    "ours_mean": 6.674913194444445,
+    "ours_p90": 8.0,
+    "ours_viol": 0,
+    "n": 2304,
+    "ours_ms": 3.046181970049232,
+    "cmp": {
+     "cmp_ours_len": 7.0,
+     "cmp_ours_ms": 1.1917891800112557,
+     "milp_len": 5.0,
+     "milp_ms": 145.4955707599879,
+     "anchor_len": 3.0,
+     "anchor_ms": 795.1987702000042
+    },
+    "cmp_anchor_viol_share": 0.8,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "H3": {
+    "ours_median": 7.0,
+    "ours_mean": 7.2734375,
+    "ours_p90": 8.0,
+    "ours_viol": 0,
+    "n": 2304,
+    "ours_ms": 4.180433345489713,
+    "cmp": {
+     "cmp_ours_len": 7.0,
+     "cmp_ours_ms": 4.595199990010315,
+     "milp_len": 5.0,
+     "milp_ms": 482.2355175699909,
+     "anchor_len": 4.0,
+     "anchor_ms": 578.213784789998
+    },
+    "cmp_anchor_viol_share": 0.84,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "K2": false,
+   "K3": true
+  },
+  "compas": {
+   "H2": {
+    "ours_median": 2.0,
+    "ours_mean": 2.2815942968243683,
+    "ours_p90": 3.0,
+    "ours_viol": 0,
+    "n": 18516,
+    "ours_ms": 2.6710763984673163,
+    "cmp": {
+     "cmp_ours_len": 2.0,
+     "cmp_ours_ms": 2.7683452200062675,
+     "milp_len": 2.0,
+     "milp_ms": 98.80583286000729,
+     "anchor_len": 2.0,
+     "anchor_ms": 871.9000964000155
+    },
+    "cmp_anchor_viol_share": 0.52,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "H3": {
+    "ours_median": 2.0,
+    "ours_mean": 2.3696802765176064,
+    "ours_p90": 4.0,
+    "ours_viol": 0,
+    "n": 18516,
+    "ours_ms": 3.9988002297465215,
+    "cmp": {
+     "cmp_ours_len": 2.0,
+     "cmp_ours_ms": 3.7165443599792525,
+     "milp_len": 3.0,
+     "milp_ms": 97.94553925997434,
+     "anchor_len": 2.0,
+     "anchor_ms": 596.0900856199873
+    },
+    "cmp_anchor_viol_share": 0.59,
+    "cmp_milp_viol": 0,
+    "cmp_n": 100
+   },
+   "K2": true,
+   "K3": true
+  }
+ },
+ "verdict": {
+  "K1_H3_guarantee": true,
+  "K2_datasets": 2,
+  "K3_datasets": 3,
+  "all": true
+ }
+}

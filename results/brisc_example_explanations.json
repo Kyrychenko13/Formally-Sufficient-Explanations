@@ -1,0 +1,825 @@
+{
+ "status": "ILLUSTRATION (local, not part of reported results)",
+ "env": {
+  "sklearn": "1.7.2",
+  "torch": "2.14.1+cpu"
+ },
+ "config": {
+  "model": "H2",
+  "rules": 16,
+  "lam": 0.01
+ },
+ "fold": "confirmation fold 1 (seed 2026, index 0)",
+ "train_seed": 1000,
+ "reproduction": {
+  "n": [
+   1145,
+   1145
+  ],
+  "n_rules": [
+   14,
+   14
+  ],
+  "dl": [
+   270,
+   272
+  ],
+  "n_used_conditions": [
+   66,
+   65
+  ],
+  "rules_f1": [
+   0.7743071036025855,
+   0.7700446835420454
+  ],
+  "ours_len_equal": false,
+  "ours_viol": [
+   0,
+   0
+  ],
+  "identical": false
+ },
+ "n_used_conditions": 66,
+ "cases": [
+  {
+   "class": "glioma",
+   "test_index": 0,
+   "row": 7,
+   "filename": "brisc2025_train_00008_gl_ax_t1.jpg",
+   "decision": "glioma",
+   "length": 21,
+   "violated": false,
+   "conditions": [
+    {
+     "feature": "original_firstorder_Skewness",
+     "op": ">",
+     "t_std": -0.26054325699806213,
+     "t_raw": -0.4447826245277484,
+     "x_raw": 0.29004016518592834,
+     "importance": 0.4533053543418646
+    },
+    {
+     "feature": "original_firstorder_Minimum",
+     "op": ">",
+     "t_std": -1.1904962062835693,
+     "t_raw": 5.179404352684443,
+     "x_raw": 36.0,
+     "importance": 0.3341899695806205
+    },
+    {
+     "feature": "original_glrlm_GrayLevelNonUniformity",
+     "op": ">",
+     "t_std": -0.6167058944702148,
+     "t_raw": 148.05923264229276,
+     "x_raw": 770.497314453125,
+     "importance": 0.30417538713663816
+    },
+    {
+     "feature": "original_firstorder_10Percentile",
+     "op": "<=",
+     "t_std": 0.23227818310260773,
+     "t_raw": 75.83542964041939,
+     "x_raw": 54.0,
+     "importance": 0.2825322523713112
+    },
+    {
+     "feature": "original_glszm_SizeZoneNonUniformityNormalized",
+     "op": ">",
+     "t_std": -1.2096045017242432,
+     "t_raw": 0.06268502842660383,
+     "x_raw": 0.1105385422706604,
+     "importance": 0.23649222403764725
+    },
+    {
+     "feature": "original_gldm_DependenceVariance",
+     "op": "<=",
+     "t_std": 0.10344509780406952,
+     "t_raw": 4.113408627208113,
+     "x_raw": 3.4351866245269775,
+     "importance": 0.2150779222138226
+    },
+    {
+     "feature": "original_glszm_SmallAreaHighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.1231222152709961,
+     "t_raw": 4.327973548912168,
+     "x_raw": 2.6289491653442383,
+     "importance": 0.21110683120787144
+    },
+    {
+     "feature": "original_firstorder_TotalEnergy",
+     "op": ">",
+     "t_std": -0.23161004483699799,
+     "t_raw": 31597282.83075738,
+     "x_raw": 59829180.0,
+     "importance": 0.20872680377215147
+    },
+    {
+     "feature": "original_glszm_SmallAreaEmphasis",
+     "op": ">",
+     "t_std": -0.4345567226409912,
+     "t_raw": 0.2601645314142472,
+     "x_raw": 0.3141419589519501,
+     "importance": 0.20354591961950064
+    },
+    {
+     "feature": "original_glrlm_LongRunHighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": -0.2249249815940857,
+     "t_raw": 743.8056867212513,
+     "x_raw": 247.96243286132812,
+     "importance": 0.19169868947938085
+    },
+    {
+     "feature": "original_firstorder_InterquartileRange",
+     "op": "<=",
+     "t_std": 1.7831953763961792,
+     "t_raw": 62.38433933418389,
+     "x_raw": 25.0,
+     "importance": 0.18255541659891605
+    },
+    {
+     "feature": "original_gldm_LargeDependenceHighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": -0.5329171419143677,
+     "t_raw": 605.1630219438944,
+     "x_raw": 374.6109619140625,
+     "importance": 0.16817364934831858
+    },
+    {
+     "feature": "original_ngtdm_Busyness",
+     "op": ">",
+     "t_std": -0.14759545028209686,
+     "t_raw": 3.6889204245362537,
+     "x_raw": 51.39179992675781,
+     "importance": 0.16760473512113094
+    },
+    {
+     "feature": "original_gldm_LargeDependenceLowGrayLevelEmphasis",
+     "op": ">",
+     "t_std": 0.20783178508281708,
+     "t_raw": 9.334898713945423,
+     "x_raw": 10.689250946044922,
+     "importance": 0.16030546836555004
+    },
+    {
+     "feature": "original_glcm_ClusterShade",
+     "op": ">",
+     "t_std": 0.1942281872034073,
+     "t_raw": -0.035949121420141505,
+     "x_raw": 0.47155237197875977,
+     "importance": 0.15764537686482072
+    },
+    {
+     "feature": "original_glszm_ZonePercentage",
+     "op": "<=",
+     "t_std": -0.13776753842830658,
+     "t_raw": 0.022718595587113852,
+     "x_raw": 0.01680842414498329,
+     "importance": 0.1442057266831398
+    },
+    {
+     "feature": "original_glszm_SizeZoneNonUniformity",
+     "op": ">",
+     "t_std": -0.3180038332939148,
+     "t_raw": 6.966889526009923,
+     "x_raw": 18.349397659301758,
+     "importance": 0.14000197779387236
+    },
+    {
+     "feature": "original_firstorder_Mean",
+     "op": "<=",
+     "t_std": -0.15090231597423553,
+     "t_raw": 95.30917023498439,
+     "x_raw": 75.93580627441406,
+     "importance": 0.13805445469915867
+    },
+    {
+     "feature": "original_glszm_ZoneEntropy",
+     "op": ">",
+     "t_std": 0.0788654163479805,
+     "t_raw": 5.123819451412407,
+     "x_raw": 5.608150005340576,
+     "importance": 0.12701428029686213
+    },
+    {
+     "feature": "original_firstorder_Median",
+     "op": "<=",
+     "t_std": -0.6748807430267334,
+     "t_raw": 79.19710093703372,
+     "x_raw": 75.0,
+     "importance": 0.10896182339638472
+    },
+    {
+     "feature": "original_glcm_ClusterProminence",
+     "op": "<=",
+     "t_std": -0.06655065715312958,
+     "t_raw": 67.57353390340418,
+     "x_raw": 9.70060920715332,
+     "importance": 0.09636449487879872
+    }
+   ]
+  },
+  {
+   "class": "meningioma",
+   "test_index": 219,
+   "row": 1147,
+   "filename": "brisc2025_train_01148_me_ax_t1.jpg",
+   "decision": "meningioma",
+   "length": 17,
+   "violated": false,
+   "conditions": [
+    {
+     "feature": "original_firstorder_Skewness",
+     "op": ">",
+     "t_std": -0.26054325699806213,
+     "t_raw": -0.4447826245277484,
+     "x_raw": -0.43599042296409607,
+     "importance": 0.4533053543418646
+    },
+    {
+     "feature": "original_firstorder_Minimum",
+     "op": ">",
+     "t_std": -1.1904962062835693,
+     "t_raw": 5.179404352684443,
+     "x_raw": 21.0,
+     "importance": 0.3341899695806205
+    },
+    {
+     "feature": "original_glrlm_GrayLevelNonUniformity",
+     "op": "<=",
+     "t_std": -0.6167058944702148,
+     "t_raw": 148.05923264229276,
+     "x_raw": 137.03871154785156,
+     "importance": 0.30417538713663816
+    },
+    {
+     "feature": "original_firstorder_10Percentile",
+     "op": ">",
+     "t_std": 0.23227818310260773,
+     "t_raw": 75.83542964041939,
+     "x_raw": 82.0,
+     "importance": 0.2825322523713112
+    },
+    {
+     "feature": "original_glszm_SizeZoneNonUniformityNormalized",
+     "op": ">",
+     "t_std": -1.2096045017242432,
+     "t_raw": 0.06268502842660383,
+     "x_raw": 0.09551020711660385,
+     "importance": 0.23649222403764725
+    },
+    {
+     "feature": "original_glszm_SmallAreaHighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.1231222152709961,
+     "t_raw": 4.327973548912168,
+     "x_raw": 3.9278178215026855,
+     "importance": 0.21110683120787144
+    },
+    {
+     "feature": "original_firstorder_TotalEnergy",
+     "op": ">",
+     "t_std": -0.23161004483699799,
+     "t_raw": 31597282.83075738,
+     "x_raw": 33291448.0,
+     "importance": 0.20872680377215147
+    },
+    {
+     "feature": "original_glszm_SmallAreaEmphasis",
+     "op": ">",
+     "t_std": -0.4345567226409912,
+     "t_raw": 0.2601645314142472,
+     "x_raw": 0.2690560817718506,
+     "importance": 0.20354591961950064
+    },
+    {
+     "feature": "original_glrlm_LongRunHighGrayLevelEmphasis",
+     "op": ">",
+     "t_std": -0.2249249815940857,
+     "t_raw": 743.8056867212513,
+     "x_raw": 1144.365234375,
+     "importance": 0.19169868947938085
+    },
+    {
+     "feature": "original_firstorder_InterquartileRange",
+     "op": "<=",
+     "t_std": 1.7831953763961792,
+     "t_raw": 62.38433933418389,
+     "x_raw": 24.0,
+     "importance": 0.18255541659891605
+    },
+    {
+     "feature": "original_firstorder_90Percentile",
+     "op": ">",
+     "t_std": -1.0607813596725464,
+     "t_raw": 90.54447989267769,
+     "x_raw": 135.0,
+     "importance": 0.1687572691589594
+    },
+    {
+     "feature": "original_ngtdm_Busyness",
+     "op": "<=",
+     "t_std": -0.14759545028209686,
+     "t_raw": 3.6889204245362537,
+     "x_raw": 2.5513651371002197,
+     "importance": 0.16760473512113094
+    },
+    {
+     "feature": "original_gldm_LargeDependenceLowGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.20783178508281708,
+     "t_raw": 9.334898713945423,
+     "x_raw": 2.3681650161743164,
+     "importance": 0.16030546836555004
+    },
+    {
+     "feature": "original_glcm_ClusterShade",
+     "op": "<=",
+     "t_std": 0.1942281872034073,
+     "t_raw": -0.035949121420141505,
+     "x_raw": -1.0075992345809937,
+     "importance": 0.15764537686482072
+    },
+    {
+     "feature": "original_glszm_ZonePercentage",
+     "op": "<=",
+     "t_std": -0.13776753842830658,
+     "t_raw": 0.022718595587113852,
+     "x_raw": 0.013581683859229088,
+     "importance": 0.1442057266831398
+    },
+    {
+     "feature": "original_glszm_ZoneEntropy",
+     "op": "<=",
+     "t_std": 0.0788654163479805,
+     "t_raw": 5.123819451412407,
+     "x_raw": 4.626150608062744,
+     "importance": 0.12701428029686213
+    },
+    {
+     "feature": "original_firstorder_Median",
+     "op": ">",
+     "t_std": -0.6748807430267334,
+     "t_raw": 79.19710093703372,
+     "x_raw": 114.0,
+     "importance": 0.10896182339638472
+    }
+   ]
+  },
+  {
+   "class": "pituitary",
+   "test_index": 483,
+   "row": 2480,
+   "filename": "brisc2025_train_03548_pi_ax_t1.jpg",
+   "decision": "pituitary",
+   "length": 26,
+   "violated": false,
+   "conditions": [
+    {
+     "feature": "original_firstorder_Skewness",
+     "op": "<=",
+     "t_std": -0.26054325699806213,
+     "t_raw": -0.4447826245277484,
+     "x_raw": -0.5666311979293823,
+     "importance": 0.4533053543418646
+    },
+    {
+     "feature": "original_firstorder_Minimum",
+     "op": ">",
+     "t_std": -1.1904962062835693,
+     "t_raw": 5.179404352684443,
+     "x_raw": 18.0,
+     "importance": 0.3341899695806205
+    },
+    {
+     "feature": "original_glrlm_GrayLevelNonUniformity",
+     "op": "<=",
+     "t_std": -0.6167058944702148,
+     "t_raw": 148.05923264229276,
+     "x_raw": 107.49063873291016,
+     "importance": 0.30417538713663816
+    },
+    {
+     "feature": "original_firstorder_Energy",
+     "op": "<=",
+     "t_std": 0.025887485593557358,
+     "t_raw": 54508762.229904525,
+     "x_raw": 12335533.0,
+     "importance": 0.2862774492241442
+    },
+    {
+     "feature": "original_firstorder_10Percentile",
+     "op": "<=",
+     "t_std": 0.23227818310260773,
+     "t_raw": 75.83542964041939,
+     "x_raw": 68.69999694824219,
+     "importance": 0.2825322523713112
+    },
+    {
+     "feature": "original_glszm_SizeZoneNonUniformityNormalized",
+     "op": ">",
+     "t_std": -1.2096045017242432,
+     "t_raw": 0.06268502842660383,
+     "x_raw": 0.14672216773033142,
+     "importance": 0.23649222403764725
+    },
+    {
+     "feature": "original_firstorder_TotalEnergy",
+     "op": "<=",
+     "t_std": -0.23161004483699799,
+     "t_raw": 31597282.83075738,
+     "x_raw": 12335533.0,
+     "importance": 0.20872680377215147
+    },
+    {
+     "feature": "original_glszm_SmallAreaEmphasis",
+     "op": ">",
+     "t_std": -0.4345567226409912,
+     "t_raw": 0.2601645314142472,
+     "x_raw": 0.3683118522167206,
+     "importance": 0.20354591961950064
+    },
+    {
+     "feature": "original_glrlm_LongRunHighGrayLevelEmphasis",
+     "op": ">",
+     "t_std": -0.2249249815940857,
+     "t_raw": 743.8056867212513,
+     "x_raw": 1332.8822021484375,
+     "importance": 0.19169868947938085
+    },
+    {
+     "feature": "original_firstorder_InterquartileRange",
+     "op": "<=",
+     "t_std": 1.7831953763961792,
+     "t_raw": 62.38433933418389,
+     "x_raw": 14.0,
+     "importance": 0.18255541659891605
+    },
+    {
+     "feature": "original_firstorder_90Percentile",
+     "op": ">",
+     "t_std": -1.0607813596725464,
+     "t_raw": 90.54447989267769,
+     "x_raw": 97.0,
+     "importance": 0.1687572691589594
+    },
+    {
+     "feature": "original_ngtdm_Busyness",
+     "op": "<=",
+     "t_std": -0.14759545028209686,
+     "t_raw": 3.6889204245362537,
+     "x_raw": 3.208101272583008,
+     "importance": 0.16760473512113094
+    },
+    {
+     "feature": "original_gldm_LargeDependenceLowGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.20783178508281708,
+     "t_raw": 9.334898713945423,
+     "x_raw": 4.063366413116455,
+     "importance": 0.16030546836555004
+    },
+    {
+     "feature": "original_glcm_ClusterShade",
+     "op": "<=",
+     "t_std": 0.1942281872034073,
+     "t_raw": -0.035949121420141505,
+     "x_raw": -0.6192909479141235,
+     "importance": 0.15764537686482072
+    },
+    {
+     "feature": "original_firstorder_Kurtosis",
+     "op": ">",
+     "t_std": -0.4610602557659149,
+     "t_raw": 2.9179371375159535,
+     "x_raw": 6.099380970001221,
+     "importance": 0.1552166878245771
+    },
+    {
+     "feature": "original_firstorder_Mean",
+     "op": "<=",
+     "t_std": -0.15090231597423553,
+     "t_raw": 95.30917023498439,
+     "x_raw": 83.25719451904297,
+     "importance": 0.13805445469915867
+    },
+    {
+     "feature": "original_gldm_LowGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.008227359503507614,
+     "t_raw": 0.1399275562967349,
+     "x_raw": 0.07403097301721573,
+     "importance": 0.1315782591700554
+    },
+    {
+     "feature": "original_glszm_ZoneEntropy",
+     "op": "<=",
+     "t_std": 0.0788654163479805,
+     "t_raw": 5.123819451412407,
+     "x_raw": 4.438067436218262,
+     "importance": 0.12701428029686213
+    },
+    {
+     "feature": "original_glrlm_ShortRunEmphasis",
+     "op": ">",
+     "t_std": -0.638349711894989,
+     "t_raw": 0.3376966531586846,
+     "x_raw": 0.4113219082355499,
+     "importance": 0.1251676636748016
+    },
+    {
+     "feature": "original_glcm_MCC",
+     "op": "<=",
+     "t_std": 0.5738918781280518,
+     "t_raw": 0.8937638285935587,
+     "x_raw": 0.7479913234710693,
+     "importance": 0.11280358443036675
+    },
+    {
+     "feature": "original_glszm_LargeAreaLowGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": -0.07353784143924713,
+     "t_raw": 13953.239132932184,
+     "x_raw": 3407.52001953125,
+     "importance": 0.09900569543242455
+    },
+    {
+     "feature": "original_glcm_Idmn",
+     "op": ">",
+     "t_std": 0.25825777649879456,
+     "t_raw": 0.9946056007124391,
+     "x_raw": 0.9956775307655334,
+     "importance": 0.09753776527941227
+    },
+    {
+     "feature": "original_glcm_ClusterProminence",
+     "op": "<=",
+     "t_std": -0.06655065715312958,
+     "t_raw": 67.57353390340418,
+     "x_raw": 5.4834184646606445,
+     "importance": 0.09636449487879872
+    },
+    {
+     "feature": "original_glszm_GrayLevelVariance",
+     "op": ">",
+     "t_std": -0.8540083765983582,
+     "t_raw": 1.356332247658385,
+     "x_raw": 1.9209157228469849,
+     "importance": 0.0926955109462142
+    },
+    {
+     "feature": "original_ngtdm_Contrast",
+     "op": "<=",
+     "t_std": -0.2870595455169678,
+     "t_raw": 0.009476372631416272,
+     "x_raw": 0.0033778578508645296,
+     "importance": 0.09104735776782036
+    },
+    {
+     "feature": "original_glszm_LargeAreaHighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": 0.007314939983189106,
+     "t_raw": 1743449.4919141016,
+     "x_raw": 846448.5625,
+     "importance": 0.06972325453534722
+    }
+   ]
+  },
+  {
+   "class": "no_tumor",
+   "test_index": 947,
+   "row": 4794,
+   "filename": "brisc2025_train_02478_no_ax_t1.jpg",
+   "decision": "no_tumor",
+   "length": 28,
+   "violated": false,
+   "conditions": [
+    {
+     "feature": "original_firstorder_Minimum",
+     "op": "<=",
+     "t_std": -1.1904962062835693,
+     "t_raw": 5.179404352684443,
+     "x_raw": 0.0,
+     "importance": 0.3341899695806205
+    },
+    {
+     "feature": "original_glrlm_GrayLevelNonUniformity",
+     "op": ">",
+     "t_std": -0.6167058944702148,
+     "t_raw": 148.05923264229276,
+     "x_raw": 286.0061340332031,
+     "importance": 0.30417538713663816
+    },
+    {
+     "feature": "original_firstorder_Energy",
+     "op": "<=",
+     "t_std": 0.025887485593557358,
+     "t_raw": 54508762.229904525,
+     "x_raw": 16114746.0,
+     "importance": 0.2862774492241442
+    },
+    {
+     "feature": "original_firstorder_10Percentile",
+     "op": "<=",
+     "t_std": 0.23227818310260773,
+     "t_raw": 75.83542964041939,
+     "x_raw": 11.0,
+     "importance": 0.2825322523713112
+    },
+    {
+     "feature": "original_gldm_DependenceVariance",
+     "op": ">",
+     "t_std": 0.10344509780406952,
+     "t_raw": 4.113408627208113,
+     "x_raw": 4.7729902267456055,
+     "importance": 0.2150779222138226
+    },
+    {
+     "feature": "original_firstorder_TotalEnergy",
+     "op": "<=",
+     "t_std": -0.23161004483699799,
+     "t_raw": 31597282.83075738,
+     "x_raw": 16114746.0,
+     "importance": 0.20872680377215147
+    },
+    {
+     "feature": "original_glszm_SmallAreaEmphasis",
+     "op": "<=",
+     "t_std": -0.4345567226409912,
+     "t_raw": 0.2601645314142472,
+     "x_raw": 0.2246609330177307,
+     "importance": 0.20354591961950064
+    },
+    {
+     "feature": "original_firstorder_90Percentile",
+     "op": ">",
+     "t_std": -1.0607813596725464,
+     "t_raw": 90.54447989267769,
+     "x_raw": 104.0,
+     "importance": 0.1687572691589594
+    },
+    {
+     "feature": "original_ngtdm_Busyness",
+     "op": ">",
+     "t_std": -0.14759545028209686,
+     "t_raw": 3.6889204245362537,
+     "x_raw": 9.616028785705566,
+     "importance": 0.16760473512113094
+    },
+    {
+     "feature": "original_gldm_LargeDependenceLowGrayLevelEmphasis",
+     "op": ">",
+     "t_std": 0.20783178508281708,
+     "t_raw": 9.334898713945423,
+     "x_raw": 13.011679649353027,
+     "importance": 0.16030546836555004
+    },
+    {
+     "feature": "original_glcm_ClusterShade",
+     "op": "<=",
+     "t_std": 0.1942281872034073,
+     "t_raw": -0.035949121420141505,
+     "x_raw": -0.6581056714057922,
+     "importance": 0.15764537686482072
+    },
+    {
+     "feature": "original_firstorder_Kurtosis",
+     "op": "<=",
+     "t_std": -0.4610602557659149,
+     "t_raw": 2.9179371375159535,
+     "x_raw": 2.2267861366271973,
+     "importance": 0.1552166878245771
+    },
+    {
+     "feature": "original_glszm_ZonePercentage",
+     "op": ">",
+     "t_std": -0.13776753842830658,
+     "t_raw": 0.022718595587113852,
+     "x_raw": 0.05091137811541557,
+     "importance": 0.1442057266831398
+    },
+    {
+     "feature": "original_firstorder_Mean",
+     "op": "<=",
+     "t_std": -0.15090231597423553,
+     "t_raw": 95.30917023498439,
+     "x_raw": 62.80641174316406,
+     "importance": 0.13805445469915867
+    },
+    {
+     "feature": "original_gldm_LowGrayLevelEmphasis",
+     "op": ">",
+     "t_std": 0.008227359503507614,
+     "t_raw": 0.1399275562967349,
+     "x_raw": 0.26353663206100464,
+     "importance": 0.1315782591700554
+    },
+    {
+     "feature": "original_glszm_ZoneEntropy",
+     "op": ">",
+     "t_std": 0.0788654163479805,
+     "t_raw": 5.123819451412407,
+     "x_raw": 6.095005989074707,
+     "importance": 0.12701428029686213
+    },
+    {
+     "feature": "original_glrlm_LowGrayLevelRunEmphasis",
+     "op": ">",
+     "t_std": -0.23772837221622467,
+     "t_raw": 0.12281687131199814,
+     "x_raw": 0.18912917375564575,
+     "importance": 0.10033685993403196
+    },
+    {
+     "feature": "original_glcm_Idmn",
+     "op": "<=",
+     "t_std": 0.25825777649879456,
+     "t_raw": 0.9946056007124391,
+     "x_raw": 0.9897341728210449,
+     "importance": 0.09753776527941227
+    },
+    {
+     "feature": "original_glcm_ClusterProminence",
+     "op": ">",
+     "t_std": -0.06655065715312958,
+     "t_raw": 67.57353390340418,
+     "x_raw": 92.44204711914062,
+     "importance": 0.09636449487879872
+    },
+    {
+     "feature": "original_ngtdm_Contrast",
+     "op": ">",
+     "t_std": -0.2870595455169678,
+     "t_raw": 0.009476372631416272,
+     "x_raw": 0.024946244433522224,
+     "importance": 0.09104735776782036
+    },
+    {
+     "feature": "original_glcm_Contrast",
+     "op": ">",
+     "t_std": -0.48978838324546814,
+     "t_raw": 0.18926685270802934,
+     "x_raw": 0.5244482755661011,
+     "importance": 0.0640956973657012
+    },
+    {
+     "feature": "original_glszm_ZoneVariance",
+     "op": "<=",
+     "t_std": -0.23531338572502136,
+     "t_raw": 50560.21809593616,
+     "x_raw": 1802.0323486328125,
+     "importance": 0.06356282718479633
+    },
+    {
+     "feature": "original_glcm_DifferenceEntropy",
+     "op": ">",
+     "t_std": -0.0264715738594532,
+     "t_raw": 0.7888362660461461,
+     "x_raw": 1.1543008089065552,
+     "importance": 0.05486849695444107
+    },
+    {
+     "feature": "original_gldm_HighGrayLevelEmphasis",
+     "op": "<=",
+     "t_std": -0.5388773679733276,
+     "t_raw": 11.513743339722016,
+     "x_raw": 11.06411075592041,
+     "importance": 0.05289347842335701
+    },
+    {
+     "feature": "original_firstorder_MeanAbsoluteDeviation",
+     "op": ">",
+     "t_std": -0.6437888741493225,
+     "t_raw": 13.09010390024747,
+     "x_raw": 27.98524284362793,
+     "importance": 0.04538571368902922
+    },
+    {
+     "feature": "original_ngtdm_Complexity",
+     "op": ">",
+     "t_std": -0.5713464021682739,
+     "t_raw": 2.3346562761893654,
+     "x_raw": 5.983426094055176,
+     "importance": 0.04521980416029692
+    },
+    {
+     "feature": "original_glrlm_RunLengthNonUniformity",
+     "op": ">",
+     "t_std": -0.3881688714027405,
+     "t_raw": 135.01124535393063,
+     "x_raw": 395.0078125,
+     "importance": 0.04297139123082161
+    },
+    {
+     "feature": "original_glszm_LargeAreaEmphasis",
+     "op": "<=",
+     "t_std": -0.2134348750114441,
+     "t_raw": 55023.952008849126,
+     "x_raw": 2187.839599609375,
+     "importance": 0.01572713488712907
+    }
+   ]
+  }
+ ]
+}
